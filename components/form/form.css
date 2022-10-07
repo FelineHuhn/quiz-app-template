@@ -1,0 +1,26 @@
+form {
+  margin-top: 120px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: grid;
+  gap: 5px;
+}
+
+textarea {
+  height: 90px;
+}
+
+.form__button--submit {
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+  margin-top: 20px;
+}
+
+.form__button--submit:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
