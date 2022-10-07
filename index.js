@@ -30,8 +30,8 @@ bookmarkButton3.addEventListener("click", () => {
 const answerButton1 = document.querySelector(
   '[data-js="card__button-answer1"]'
 );
-const answer1 = document;
+const answer1 = document.querySelector('[data-js="card__answer1"]');
 
-bookmarkButton3.addEventListener("click", () => {
-  bookmarkButtonIcon3.classList.toggle("bookmark--active");
+answerButton1.addEventListener("click", () => {
+  answer1.classList.toggle("card__answer--active");
 });
