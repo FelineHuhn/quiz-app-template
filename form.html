@@ -20,14 +20,18 @@
           name="input__question"
           class="input__question"
           data-js="input__question"
+          maxlength="150"
         ></textarea>
+        <p data-js="counter1" class="word-counter">0/150</p>
         <label for="input__answer">Your answer:</label>
         <textarea
           type="text"
           name="input__answer"
           class="input__answer"
           data-js="input__answer"
+          maxlength="150"
         ></textarea>
+        <p data-js="counter2" class="word-counter">0/150</p>
         <label for="input__tag">Tag:</label>
         <input
           id="input__tag"
@@ -45,7 +49,7 @@
           Submit
         </button>
       </form>
-      <ul data-js="new__question-card"></ul>
+      <ul class="form-card-list" data-js="new__question-card"></ul>
     </main>
     <nav class="navigation">
       <ul class="navigation__list">

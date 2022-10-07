@@ -1,7 +1,7 @@
 form {
-  margin-top: 120px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 10rem 2rem 4rem 2rem;
+  max-width: 45rem;
+  margin: 0 auto;
   display: grid;
   gap: 5px;
 }
@@ -18,10 +18,13 @@ textarea {
   margin: 0 auto 2rem auto;
   padding: 1rem;
   margin-top: 20px;
-  margin-bottom: 100px;
 }
 
 .form__button--submit:hover {
   opacity: 0.75;
   cursor: pointer;
+}
+
+.word-counter {
+  text-align: right;
 }
