@@ -13,7 +13,7 @@
       <h1 class="header__title">Quiz-App</h1>
     </header>
     <main>
-      <form>
+      <form data-js="form">
         <label for="input__question">Your question:</label>
         <textarea
           type="text"
@@ -36,8 +36,16 @@
           class="input__tag"
           data-js="input__tag"
         />
-        <button type="submit" class="form__button--submit">Submit</button>
+        <button
+          type="submit"
+          name="submit-button"
+          class="form__button--submit"
+          data-js="form__button--submit"
+        >
+          Submit
+        </button>
       </form>
+      <ul data-js="new__question-card"></ul>
     </main>
     <nav class="navigation">
       <ul class="navigation__list">
