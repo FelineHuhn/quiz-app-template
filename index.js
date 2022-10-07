@@ -24,3 +24,14 @@ bookmarkButton2.addEventListener("click", () => {
 bookmarkButton3.addEventListener("click", () => {
   bookmarkButtonIcon3.classList.toggle("bookmark--active");
 });
+
+//Show-Answer-Button
+
+const answerButton1 = document.querySelector(
+  '[data-js="card__button-answer1"]'
+);
+const answer1 = document;
+
+bookmarkButton3.addEventListener("click", () => {
+  bookmarkButtonIcon3.classList.toggle("bookmark--active");
+});
