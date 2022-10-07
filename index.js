@@ -32,6 +32,24 @@ const answerButton1 = document.querySelector(
 );
 const answer1 = document.querySelector('[data-js="card__answer1"]');
 
+const answerButton2 = document.querySelector(
+  '[data-js="card__button-answer2"]'
+);
+const answer2 = document.querySelector('[data-js="card__answer2"]');
+
+const answerButton3 = document.querySelector(
+  '[data-js="card__button-answer3"]'
+);
+const answer3 = document.querySelector('[data-js="card__answer3"]');
+
 answerButton1.addEventListener("click", () => {
   answer1.classList.toggle("card__answer--active");
+});
+
+answerButton2.addEventListener("click", () => {
+  answer2.classList.toggle("card__answer--active");
+});
+
+answerButton3.addEventListener("click", () => {
+  answer3.classList.toggle("card__answer--active");
 });
