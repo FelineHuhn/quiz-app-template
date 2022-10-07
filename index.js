@@ -2,25 +2,26 @@ console.clear();
 
 //Bookmark-Button
 
-const bookmarkButton1 = document.querySelector('[data-js="button__bookmark1"]');
-const bookmarkButtonIcon1 = document.querySelector(
-  '[data-js="button__bookmark--icon1"]'
-);
-const bookmarkButton2 = document.querySelector('[data-js="button__bookmark2"]');
-const bookmarkButtonIcon2 = document.querySelector(
-  '[data-js="button__bookmark--icon2"]'
-);
-const bookmarkButton3 = document.querySelector('[data-js="button__bookmark3"]');
-const bookmarkButtonIcon3 = document.querySelector(
-  '[data-js="button__bookmark--icon3"]'
+const bookmarkButton = document.querySelector('[data-js="button__bookmark"]');
+const bookmarkButtonIcon = document.querySelector(
+  '[data-js="button__bookmark--icon"]'
 );
 
-bookmarkButton1.addEventListener("click", () => {
-  bookmarkButtonIcon1.classList.toggle("bookmark--active");
+bookmarkButton.addEventListener("click", () => {
+  bookmarkButtonIcon.classList.toggle("bookmark--active");
 });
-bookmarkButton2.addEventListener("click", () => {
-  bookmarkButtonIcon2.classList.toggle("bookmark--active");
-});
-bookmarkButton3.addEventListener("click", () => {
-  bookmarkButtonIcon3.classList.toggle("bookmark--active");
+
+//Show-Answer-Button
+
+const answerButton = document.querySelector('[data-js="card__button-answer"]');
+const answer = document.querySelector('[data-js="card__answer"]');
+
+answerButton.addEventListener("click", () => {
+  if (answerButton.textContent.trim() === "Show answer") {
+    answer.classList.toggle("card__answer--active");
+    answerButton.textContent = "hide answer";
+  } else if (answerButton.textContent.trim() === "hide answer") {
+    answer.classList.toggle("card__answer--active");
+    answerButton.textContent = "Show answer";
+  }
 });
